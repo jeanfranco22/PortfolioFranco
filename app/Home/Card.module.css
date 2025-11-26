@@ -1,0 +1,87 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 2.5rem;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  background: #0f0f0f;
+  border: 1px solid rgba(255,255,255,0.08);
+  height: 350px;
+  cursor: pointer;
+  transition: border-color .25s ease, transform .25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255,255,255,0.25);
+}
+
+
+
+.preview {
+  position: absolute;
+  inset: 0;
+}
+
+.preview h3 {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: white;
+  z-index: 5;
+}
+
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+  z-index: 3;
+}
+
+
+.content {
+  position: absolute;
+  inset: 0;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .35s ease, transform .35s ease;
+  z-index: 10;
+}
+
+.card:hover .content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.content p {
+  color: #d1d5db;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.9rem;
+}
+
+.icons a {
+  color: #d1d5db;
+  transition: color 0.25s ease;
+}
+
+.icons a:hover {
+  color: white;
+}

@@ -1,0 +1,18 @@
+.body {
+    background-color: #0c4a6e;
+}
+
+.title {
+    color: rgb(12, 74, 110);
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 100px;
+}
+.wave {
+  background: rgb(12, 74, 110);
+  padding: 100px 20px;
+  color: white;
+  width: 100%;
+  clip-path: polygon(0 10%, 100% , 100% 100%, 0 90%);
+
+}
