@@ -51,7 +51,7 @@ export default function HomePage() {
       </p>
 
       <a 
-        href="/about" 
+        href="/FrancoCV.pdf" 
         className="mt-6 w-40 py-3 px-7 bg-sky-900 text-white flex justify-center rounded-lg text-lg font-semibold hover:bg-sky-800 transition"
       >
         {language === "EN" ? "Resume" : "Curriculum"}
@@ -115,17 +115,23 @@ export default function HomePage() {
   <div className={cardStyles.container}>
 
     <section className={cardStyles.card}>
-      <div className={cardStyles.preview}>
-        
-      </div>
-      <div className={cardStyles.content}>
-        <p>Mis redes y sitios de contacto</p>
-        <div className={cardStyles.icons}>
-          <a href="https://github.com/jeanfranco22"><FaGithub /></a>
-          <a href=""><FaLinkedin /></a>
-        </div>
-      </div>
-    </section>
+  <div className={cardStyles.preview}>
+    <Image 
+      src="/fondo1.webp" 
+      alt="Fondo Contacto"
+      fill
+      className="object-cover"
+    />
+  </div>
+
+  <div className={cardStyles.content}>
+    <p>Mis redes y sitios de contacto</p>
+    <div className={cardStyles.icons}>
+      <a href="https://github.com/jeanfranco22"><FaGithub /></a>
+      <a href=""><FaLinkedin /></a>
+    </div>
+  </div>
+</section>
 
     <section className={cardStyles.card}>
       <div className={cardStyles.preview}>

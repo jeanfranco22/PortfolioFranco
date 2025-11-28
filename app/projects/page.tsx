@@ -11,7 +11,7 @@ const projects = [
       EN: "My networks, main links and contact pages.",
       ES: "Mis redes, links principales y sitios de contacto.",
     },
-    image: "/1234",
+    image: "/fondo1.webp",
     github: "https://github.com/jeanfranco22",
     link: "",
   },
