@@ -142,7 +142,7 @@ export default function HomePage() {
       </div>
     </section>
 
-    <Link  href="https://e-commerce-ebsi1dxg6-francos-projects-d899fa4d.vercel.app/Home"
+    <Link  href="https://e-commerce-tau-three-66.vercel.app/"
       target="_blank" className={cardStyles.card}>
       
       <div className={cardStyles.preview}>
