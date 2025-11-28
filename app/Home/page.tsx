@@ -27,37 +27,36 @@ export default function HomePage() {
             <section className="w-full h-screen flex items-center bg-gradient-to-b from-[#0c4a70] to-[#072f46]">
   <div className="grid grid-cols-1 md:grid-cols-2 gap-10 px-16">
 
-    
-    <div className="flex flex-col justify-center px-25">
+   
+    <div className="flex justify-center items-center order-2 md:order-1">
+      <div className="relative w-80 md:w-[28rem] aspect-square rounded-full overflow-hidden border-4 border-sky-900 shadow-xl">
+        <Image 
+          src="/FotoDePerfil.png" 
+          alt="foto de perfil"
+          fill
+          className="object-cover"
+        />
+      </div>
+    </div>
+
+  
+    <div className="flex flex-col justify-center order-1 md:order-2 px-25">
       <h1 className="text-5xl font-extrabold text-white flex items-center gap-3">
-                            
-                            {language === "EN" 
-                                ? "I'm Franco"    
-                                : "Soy Franco"}     
-                            
-                            <FaRegHandPeace className="text-4xl text-sky-300" />
-                        </h1>
+        {language === "EN" ? "I'm Franco" : "Soy Franco"}
+        <FaRegHandPeace className="text-4xl text-sky-300" />
+      </h1>
 
       <p className="text-4xl md:text-5xl text-sky-200 font-semibold mt-4">
-       {language === 'EN' ? "Full Stack Developer" : "Desarrollador Full Stack"}
+        {language === 'EN' ? "Full Stack Developer" : "Desarrollador Full Stack"}
       </p>
 
-      <a href="/about" className="mt-6 w-40 py-3 px-7 bg-sky-900 text-white flex justify-center rounded-lg text-lg font-semibold hover:bg-sky-800 transition">
+      <a 
+        href="/about" 
+        className="mt-6 w-40 py-3 px-7 bg-sky-900 text-white flex justify-center rounded-lg text-lg font-semibold hover:bg-sky-800 transition"
+      >
         {language === "EN" ? "Resume" : "Curriculum"}
       </a>
     </div>
-
-    
-    <div className="flex justify-center items-center px-30">
-  <div className="relative w-72 h-72 rounded-full overflow-hidden border-4 border-sky-900 shadow-xl">
-    <Image 
-      src="/Fotoperfil.jpeg" 
-      alt="foto de perfil" 
-      fill 
-      className="object-cover"
-    />
-  </div>
-</div>
 
   </div>
 </section>

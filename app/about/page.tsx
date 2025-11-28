@@ -58,23 +58,23 @@ const About = () => {
 
         
         <div className="space-y-6">
-          <h2 className="text-3xl font-bold">Education</h2>
+          <h2 className="text-3xl font-bold">{language === "EN" ? "Education" : "Educacion"}</h2>
 
           <ul className="list-disc list-inside space-y-2 text-lg opacity-95">
-            <li>Full Stack Developer - Soy Henry (Enero 2025 - Noviembre 2025)</li>
-            <li>Web Development - FreeCodeCamp (Enero 2024 - Actualidad)</li>
-            <li>Licenciatura en Nutrición - Universidad del Valle de Puebla (2015 - 2020)</li>
+            <li>{language === "EN" ? "Full Stack Developer - Soy Henry (January 2025 - November 2025)" : "Desarrollador Full Stack - Soy Henry (Enero 2025 - Noviembre 2025)"}</li>
+            <li>{language === "EN" ? "Web Development - FreeCodeCamp (January 2024 - Actualidad)" : "Desarrollador Web - FreeCodeCamp (Enero 2024 - Actualidad) "}</li>
+            <li>{language === "EN" ? "Nutrition - Universidad del Valle de Puebla (2015 - 2020)" : "Nutrición - Universidad del Valle de Puebla (2015 - 2020)"}</li>
           </ul>
         </div>
 
         
         <div className="space-y-6">
-          <h2 className="text-3xl font-bold">What I Do</h2>
+          <h2 className="text-3xl font-bold">{language === "EN" ? "What I Do" : "Que hago"}</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
             <div className="bg-white/10 backdrop-blur-xl rounded-2xl p-6 shadow-xl border border-white/10">
-              <h3 className="text-2xl font-semibold mb-3">Frontend Development</h3>
+              <h3 className="text-2xl font-semibold mb-3">{language === "EN" ? "Frontend Development" : "Desarrollo Frontend"}</h3>
               <p className="opacity-95">
                 Desarrollo interfaces modernas y responsivas utilizando React y Next.js.
                 Me enfoco en crear experiencias visuales atractivas, accesibles y con excelente rendimiento.
