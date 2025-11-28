@@ -16,7 +16,7 @@ export default function NavBar() {
 
                     <li>
                         <button 
-                            className="opacity-80 hover:opacity-100 transition"
+                            className="opacity-80 hover:opacity-100 transition cursor-pointer"
                             onClick={toggleLanguage}
                         >
                             {language}

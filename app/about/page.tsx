@@ -76,32 +76,40 @@ const About = () => {
             <div className="bg-white/10 backdrop-blur-xl rounded-2xl p-6 shadow-xl border border-white/10">
               <h3 className="text-2xl font-semibold mb-3">{language === "EN" ? "Frontend Development" : "Desarrollo Frontend"}</h3>
               <p className="opacity-95">
-                Desarrollo interfaces modernas y responsivas utilizando React y Next.js.
-                Me enfoco en crear experiencias visuales atractivas, accesibles y con excelente rendimiento.
+                {language === "EN"
+                  ? "I develop modern and responsive interfaces using React and Next.js. I focus on creating visually appealing, accessible, and high-performance experiences."
+                  : "Desarrollo interfaces modernas y responsivas utilizando React y Next.js. Me enfoco en crear experiencias atractivas, accesibles y con gran rendimiento."
+                }
               </p>
             </div>
 
             <div className="bg-white/10 backdrop-blur-xl rounded-2xl p-6 shadow-xl border border-white/10">
               <h3 className="text-2xl font-semibold mb-3">Backend & APIs</h3>
               <p className="opacity-95">
-                Construcción de APIs con Node.js, Express y bases de datos como PostgreSQL y MongoDB.
-                Autenticación, rutas protegidas y lógica de negocio escalable.
+                {language === "EN"
+                  ? "API development with Node.js, Express, and databases such as PostgreSQL and MongoDB. Authentication, protected routes, and scalable business logic."
+                  : "Construcción de APIs con Node.js, Express y bases de datos como PostgreSQL y MongoDB. Autenticación, rutas protegidas y lógica de negocio escalable."
+                }
               </p>
             </div>
 
             <div className="bg-white/10 backdrop-blur-xl rounded-2xl p-6 shadow-xl border border-white/10">
-              <h3 className="text-2xl font-semibold mb-3">UI / UX Design</h3>
+              <h3 className="text-2xl font-semibold mb-3">{language === "EN" ? "UI / UX Design" : "Diseño UI / UX"}</h3>
               <p className="opacity-95">
-                Diseño minimalista y limpio con enfoque en usabilidad.
-                Me apoyo en TailwindCSS, buenas prácticas de diseño y estructura clara.
+                {language === "EN"
+                  ? "Minimal and clean design with a focus on usability. I rely on TailwindCSS, design principles, and clear structure."
+                  : "Diseño minimalista y limpio con enfoque en usabilidad. Me apoyo en TailwindCSS, buenas prácticas de diseño y una estructura clara."
+                }
               </p>
             </div>
 
             <div className="bg-white/10 backdrop-blur-xl rounded-2xl p-6 shadow-xl border border-white/10">
-              <h3 className="text-2xl font-semibold mb-3">Deploy & Optimization</h3>
+              <h3 className="text-2xl font-semibold mb-3">{language === "EN" ? "Deploy & Optimization" : "Despliegue & Optimizacion"}</h3>
               <p className="opacity-95">
-                Deploy de proyectos en Vercel, optimización SEO, mejora de performance
-                y buenas prácticas para entregar productos rápidos y estables.
+                {language === "EN"
+                  ? "Deploying projects on Vercel, SEO optimization, performance improvements, and best practices to deliver fast and stable products."
+                  : "Deploy de proyectos en Vercel, optimización de SEO, mejora de performance y buenas prácticas para entregar productos rápidos y estables."
+                }
               </p>
             </div>
 

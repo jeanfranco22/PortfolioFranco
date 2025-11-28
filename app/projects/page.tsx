@@ -1,31 +1,49 @@
+'use client'
+
+import { useLanguage } from "@/context/LanguageContext";
 import Image from "next/image";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
-  {
-    title: "Portfolio & Contact",
-    description: "Mis redes, links principales y sitios de contacto.",
-    image: "/1234", 
+ {
+    title: { EN: "Portfolio & Contact", ES: "Portfolio & Contacto" },
+    description: {
+      EN: "My networks, main links and contact pages.",
+      ES: "Mis redes, links principales y sitios de contacto.",
+    },
+    image: "/1234",
     github: "https://github.com/jeanfranco22",
     link: "",
   },
+
   {
-    title: "Snake Game",
-    description: "Snake desarrollado con Vanilla JS, HTML y CSS.",
+    title: { EN: "Snake Game", ES: "Snake Game" },
+    description: {
+      EN: "Snake developed using Vanilla JS, HTML and CSS.",
+      ES: "Snake desarrollado con Vanilla JS, HTML y CSS.",
+    },
     image: "/Snake.png",
     github: "",
     link: "",
   },
+
   {
-    title: "E-commerce Joyería",
-    description: "Tienda inspirada en Cartier",
+    title: { EN: "E-commerce Jewelry", ES: "E-commerce Joyería" },
+    description: {
+      EN: "Store inspired by Cartier.",
+      ES: "Tienda inspirada en Cartier.",
+    },
     image: "/ecommerce.png",
     github: "",
     link: "",
   },
+
   {
-    title: "Pilates Studio",
-    description: "Sitio para reservar citas, a pagina de pilates",
+    title: { EN: "Pilates Studio", ES: "Pilates Studio" },
+    description: {
+      EN: "Website for booking pilates sessions.",
+      ES: "Sitio para reservar citas, a página de pilates.",
+    },
     image: "/pilates.png",
     github: "",
     link: "",
@@ -33,17 +51,21 @@ const projects = [
 ];
 
 const Projects = () => {
+
+  const { language } = useLanguage();
+
   return (
     <section className="w-full min-h-screen bg-gradient-to-b from-[#072f46] to-sky-900 py-20 text-white">
       <div className="max-w-6xl mx-auto px-6">
 
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-extrabold tracking-tight">
-            Projects
+            {language === "EN" ? "Projects" : "Proyectos"}
+            
           </h2>
           <p className="text-sky-200 text-lg max-w-2xl mx-auto mt-3 opacity-90">
-            Aquí encontrarás algunos de los proyectos que he desarrollado. 
-            Cada uno enfocado en buenas prácticas, diseño y experiencia de usuario.
+            {language === "EN" ? "Here you’ll find some of the projects I’ve developed, each one focused on best practices, clean design, and a great user experience." : " Aquí encontrarás algunos de los proyectos que he desarrollado. Cada uno enfocado en buenas prácticas, diseño y experiencia de usuario."}
+           
           </p>
         </div>
 
@@ -58,7 +80,7 @@ const Projects = () => {
               <div className="relative w-full h-64">
                 <Image
                   src={project.image}
-                  alt={project.title}
+                  alt={project.title[language]}
                   fill
                   className="object-cover"
                 />
@@ -66,10 +88,10 @@ const Projects = () => {
 
              
               <div className="p-6 space-y-4">
-                <h3 className="text-3xl font-semibold">{project.title}</h3>
+                <h3 className="text-3xl font-semibold">{project.title[language]}</h3>
 
                 <p className="text-lg opacity-90 leading-relaxed">
-                  {project.description}
+                  {project.description[language]}
                 </p>
 
                 
