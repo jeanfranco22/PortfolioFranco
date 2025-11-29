@@ -125,7 +125,7 @@ export default function HomePage() {
   </div>
 
   <div className={cardStyles.content}>
-    <p>Mis redes y sitios de contacto</p>
+    <p>{language === "EN" ? "My links and contact" : "Mis redes y sitios de contacto"}</p>
     <div className={cardStyles.icons}>
       <a href="https://github.com/jeanfranco22"><FaGithub /></a>
       <a href=""><FaLinkedin /></a>
@@ -138,7 +138,7 @@ export default function HomePage() {
         <Image src="/Snake.png" alt="Snake" fill className="object-cover" />
       </div>
       <div className={cardStyles.content}>
-        <p>Juego desarrollado con Vanilla JS, CSS, HTML</p>
+        <p>{language === "EN" ? "Video game developed using Vanilla JS, CSS, and HTML." : "Videojuego desarrollado con Vanilla JS, CSS, HTML"}</p>
       </div>
     </Link>
 
@@ -149,7 +149,7 @@ export default function HomePage() {
         <Image src="/ecommerce.png" alt="E-commerce" fill className="object-cover" />
       </div>
       <div className={cardStyles.content}>
-        <p>Tienda de joyería inspirada en Cartier</p>
+        <p>{language === "EN" ? "Jewelry e-commerce inspired by Cartier." : "Tienda de joyería inspirada en Cartier"}</p>
       </div>
     
     </Link>
@@ -159,7 +159,7 @@ export default function HomePage() {
         <Image src="/pilates.png" alt="Pilates Studio" fill className="object-cover" />
       </div>
       <div className={cardStyles.content}>
-        <p>Sitio para agendar citas</p>
+        <p>{language === "EN" ? "Pilates website for booking appointments" : "Sitio de pilates para agendar citas"}</p>
       </div>
     </Link>
 
