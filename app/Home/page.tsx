@@ -133,14 +133,14 @@ export default function HomePage() {
   </div>
 </section>
 
-    <section className={cardStyles.card}>
+    <Link href={"https://snake-game-ebon-omega.vercel.app/"}target='_blank' className={cardStyles.card}>
       <div className={cardStyles.preview}>
         <Image src="/Snake.png" alt="Snake" fill className="object-cover" />
       </div>
       <div className={cardStyles.content}>
         <p>Juego desarrollado con Vanilla JS, CSS, HTML</p>
       </div>
-    </section>
+    </Link>
 
     <Link  href="https://e-commerce-tau-three-66.vercel.app/"
       target="_blank" className={cardStyles.card}>
@@ -154,14 +154,14 @@ export default function HomePage() {
     
     </Link>
 
-    <section className={cardStyles.card}>
+    <Link href={"https://pilates-studio-beryl.vercel.app/"} target="_blank" className={cardStyles.card}>
       <div className={cardStyles.preview}>
         <Image src="/pilates.png" alt="Pilates Studio" fill className="object-cover" />
       </div>
       <div className={cardStyles.content}>
         <p>Sitio para agendar citas</p>
       </div>
-    </section>
+    </Link>
 
   </div>
 </section>

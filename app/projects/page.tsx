@@ -24,7 +24,7 @@ const projects = [
     },
     image: "/Snake.png",
     github: "",
-    link: "",
+    link: "https://snake-game-ebon-omega.vercel.app/",
   },
 
   {
@@ -35,7 +35,7 @@ const projects = [
     },
     image: "/ecommerce.png",
     github: "",
-    link: "",
+    link: "https://e-commerce-tau-three-66.vercel.app/",
   },
 
   {
@@ -46,7 +46,7 @@ const projects = [
     },
     image: "/pilates.png",
     github: "",
-    link: "",
+    link: "https://pilates-studio-beryl.vercel.app/",
   },
 ];
 
