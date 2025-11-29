@@ -41,7 +41,7 @@ export default function HomePage() {
 
   
     <div className="flex flex-col justify-center order-1 md:order-2 px-25">
-      <h1 className="text-5xl font-extrabold text-white flex items-center gap-3">
+      <h1 className="text-8xl font-extrabold text-white flex items-center gap-3">
         {language === "EN" ? "I'm Franco" : "Soy Franco"}
         <FaRegHandPeace className="text-4xl text-sky-300" />
       </h1>
