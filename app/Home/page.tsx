@@ -133,6 +133,15 @@ export default function HomePage() {
   </div>
 </section>
 
+<Link href={"https://ap-iproject-five.vercel.app/"}target='_blank' className={cardStyles.card}>
+      <div className={cardStyles.preview}>
+        <Image src="/Fluxnotes.png" alt="Snake" fill className="object-cover" />
+      </div>
+      <div className={cardStyles.content}>
+        <p>{language === "EN" ? "Video game developed using Vanilla JS, CSS, and HTML." : "Videojuego desarrollado con Vanilla JS, CSS, HTML"}</p>
+      </div>
+    </Link>
+
     <Link href={"https://snake-game-ebon-omega.vercel.app/"}target='_blank' className={cardStyles.card}>
       <div className={cardStyles.preview}>
         <Image src="/Snake.png" alt="Snake" fill className="object-cover" />
@@ -141,6 +150,8 @@ export default function HomePage() {
         <p>{language === "EN" ? "Video game developed using Vanilla JS, CSS, and HTML." : "Videojuego desarrollado con Vanilla JS, CSS, HTML"}</p>
       </div>
     </Link>
+
+    
 
     <Link  href="https://e-commerce-tau-three-66.vercel.app/"
       target="_blank" className={cardStyles.card}>
