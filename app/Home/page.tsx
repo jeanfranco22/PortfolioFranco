@@ -48,7 +48,7 @@ export default function HomePage() {
             </p>
 
             <a
-              href="/jeanCV.pdf"
+              href="/Jean-Franco-Ferrer-Méndez-CV-.pdf"
               className="mt-6 w-40 py-3 px-7 bg-sky-900 text-white flex justify-center rounded-lg text-lg font-semibold hover:bg-sky-800 transition"
             >
               {language === "EN" ? "Resume" : "Curriculum"}
