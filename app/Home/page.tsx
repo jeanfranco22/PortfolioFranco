@@ -47,12 +47,18 @@ export default function HomePage() {
                 : "Desarrollador Full Stack"}
             </p>
 
-            <a
-              href="/Jean-Franco-Ferrer-Méndez-CV-.pdf"
-              className="mt-6 w-40 py-3 px-7 bg-sky-900 text-white flex justify-center rounded-lg text-lg font-semibold hover:bg-sky-800 transition"
-            >
-              {language === "EN" ? "Resume" : "Curriculum"}
-            </a>
+            {language === "EN" ? (
+              <Link
+                href="/Jean_Franco_Ferrer_Méndez_CVIngles.pdf"
+                target="_blank"
+              >
+                Resume
+              </Link>
+            ) : (
+              <Link href="/Jean_Franco_Ferrer_Méndez_CV.pdf" target="_blank">
+                Curriculum
+              </Link>
+            )}
           </div>
         </div>
       </section>
