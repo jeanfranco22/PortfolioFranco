@@ -11,7 +11,7 @@ export default function NavBar() {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-[#0a1d2f]/90 to-[#0f2d47]/90 backdrop-blur-md border-b border-white/10">
-      <nav className="max-w-7xl mx-auto px-5 py-4 flex justify-between items-center">
+      <nav className="max-w-7xl mx-auto px-5 py-4 flex justify-between items-center ">
         <Image
           src="/logo.png"
           alt="logo"
@@ -45,7 +45,7 @@ export default function NavBar() {
 
           <li>
             <button
-              className="opacity-80 hover:opacity-100 transition"
+              className="opacity-80 hover:opacity-100 transition cursor-pointer"
               onClick={toggleLanguage}
             >
               {language}
