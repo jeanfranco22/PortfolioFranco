@@ -65,73 +65,18 @@ const techStack = [
   { name: "CSS3", icon: <FaCss3Alt /> },
 ];
 
-export default function HomePage() {
+export default function HomeComponent() {
   const { language } = useLanguage();
   const isEN = language === "EN";
 
   return (
     <main className="min-h-screen bg-[#0a0a0b] text-white selection:bg-white selection:text-black">
-      {/* Background */}
+      Background
       <div className="fixed inset-0 -z-10">
         <div className="absolute inset-0 bg-[#0a0a0b]" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(96,165,250,0.10),transparent_30%),radial-gradient(circle_at_80%_20%,rgba(255,255,255,0.05),transparent_18%),radial-gradient(circle_at_50%_100%,rgba(59,130,246,0.08),transparent_25%)]" />
         <div className="absolute inset-0 opacity-[0.05] [background-image:linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)] [background-size:64px_64px]" />
       </div>
-
-      {/* Header */}
-      <header className="sticky top-0 z-50 border-b border-white/10 bg-black/30 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-8">
-          <Link
-            href="/"
-            className="text-sm font-semibold tracking-[0.2em] text-white/90 uppercase"
-          >
-            Franco
-          </Link>
-
-          <nav className="hidden items-center gap-8 md:flex">
-            <a
-              href="#about"
-              className="text-sm text-white/60 transition hover:text-white"
-            >
-              {isEN ? "About" : "Acerca de"}
-            </a>
-            <a
-              href="#stack"
-              className="text-sm text-white/60 transition hover:text-white"
-            >
-              {isEN ? "Stack" : "Tecnologías"}
-            </a>
-            <a
-              href="#projects"
-              className="text-sm text-white/60 transition hover:text-white"
-            >
-              {isEN ? "Projects" : "Proyectos"}
-            </a>
-            <a
-              href="#contact"
-              className="text-sm text-white/60 transition hover:text-white"
-            >
-              {isEN ? "Contact" : "Contacto"}
-            </a>
-          </nav>
-
-          <div className="flex items-center gap-3">
-            <Link
-              href={
-                isEN
-                  ? "/Jean_Franco_Ferrer_Méndez_CVIngles.pdf"
-                  : "/Jean_Franco_Ferrer_Méndez_CV.pdf"
-              }
-              target="_blank"
-              className="rounded-full border border-white/15 bg-white px-4 py-2 text-sm font-medium text-black transition hover:bg-white/90"
-            >
-              {isEN ? "Resume" : "CV"}
-            </Link>
-          </div>
-        </div>
-      </header>
-
-      {/* Hero */}
       <section className="relative overflow-hidden px-6 pb-20 pt-16 md:px-8 md:pb-28 md:pt-24">
         <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[1.15fr_0.85fr]">
           <div className="max-w-4xl">
@@ -200,7 +145,7 @@ export default function HomePage() {
                       {isEN ? "Developer profile" : "Perfil developer"}
                     </p>
                     <p className="mt-1 text-sm font-medium text-white/80">
-                      Jean Franco Ferrer
+                      Jean Franco Ferrer Méndez
                     </p>
                   </div>
                   <span className="rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-1 text-xs text-emerald-300">
@@ -255,8 +200,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* About */}
       <section id="about" className="px-6 py-20 md:px-8 md:py-28">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
@@ -308,8 +251,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* Stack */}
       <section id="stack" className="px-6 py-20 md:px-8 md:py-28">
         <div className="mx-auto max-w-7xl">
           <div className="mb-10">
@@ -342,8 +283,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* Projects */}
       <section id="projects" className="px-6 py-20 md:px-8 md:py-28">
         <div className="mx-auto max-w-7xl">
           <div className="mb-10">
@@ -398,8 +337,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* Contact */}
       <section id="contact" className="px-6 pb-24 pt-20 md:px-8 md:pb-28">
         <div className="mx-auto max-w-7xl">
           <div className="rounded-[32px] border border-white/10 bg-gradient-to-b from-white/[0.06] to-white/[0.03] p-8 backdrop-blur-xl md:p-12">
