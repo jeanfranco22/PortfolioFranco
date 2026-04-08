@@ -1,5 +1,15 @@
 export const projects = [
   {
+    title: "Classora",
+    descriptionEN:
+      "Full-stack platform for online language classes with booking flow, Stripe payments, and live sessions integration.",
+    descriptionES:
+      "Plataforma full stack para clases de idiomas en línea con sistema de reservas, pagos con Stripe e integración de sesiones en vivo.",
+    href: "https://classora-pi.vercel.app",
+    image: "/Classora.png",
+    tag: "Full Stack",
+  },
+  {
     title: "PowerGym Platform",
     descriptionEN:
       "Full-stack fitness platform with token-based memberships, class booking and real-time chat between users and coaches.",

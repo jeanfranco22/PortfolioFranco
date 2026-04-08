@@ -148,12 +148,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-8 flex flex-col gap-3 border-t border-white/10 pt-6 text-sm text-white/40 md:flex-row md:items-center md:justify-between">
-          <p>© 2026 Franco Ferrer</p>
-          <p>
-            {isEN
-              ? "Designed with a modern developer-first aesthetic."
-              : "Diseñado con una estética moderna enfocada en developers."}
-          </p>
+          <p>© Franco Ferrer</p>
         </div>
       </div>
     </footer>
